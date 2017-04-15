@@ -1,0 +1,9 @@
+Thread、Runnable、Callable：都是线程
+Thread特点：提供了线程等待、线程睡眠、线程礼让等操作
+Runnable和Callable特点：都是接口，并提供对应的实现方法
+Runnable、Callable区别：Runnable无返回值，Callable有返回值
+Future：提供了对Runnable和Callable任务的执行结果进行取消、查询是否完成、获取结果、设置结果等操作
+FutureTask：Runnable和Future的结合体，即拥有Future的特性
+
+
+Callable带有一个泛型的返回值，而Runnable并没有返回值，所以使用Callable可以返回线程的结果，而Runnable不行
